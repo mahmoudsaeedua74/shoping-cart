@@ -1,0 +1,41 @@
+/* Navbar.css */
+@import "tailwindcss";
+@tailwind utilities;
+@config "../../../tailwind.config.js";
+@layer utilities {
+  /* Common styles */
+  .nav-container {
+    @apply container mx-auto px-4 py-3 md:py-4 flex flex-wrap items-center  justify-between gap-4 ;
+  }
+  /* Navigation links
+   */
+  .nav-link {
+    @apply hover:text-main transition-colors duration-200;
+  }
+  .nav-link-mobile {
+    @apply block py-2 px-3 rounded hover:bg-gray-200 hover:text-main transition-colors duration-200;
+  }
+  /* Icon buttons with text */
+  .icon-with-text {
+    @apply flex items-center space-x-1 hover:text-main transition-colors duration-200;
+  }
+  /* Dropdown menu items */
+  .dropdown-item {
+    @apply px-4 py-2 flex items-center hover:bg-gray-50 hover:text-main transition-colors duration-200;
+  }
+  /* Search bar */
+  .search-input {
+    @apply block w-full p-3 ps-10 text-sm border border-gray-300 rounded-lg  focus:ring-blue-500 focus:border-blue-500 focus:outline-none;
+  }
+  .search-button {
+    @apply text-white absolute end-2 top-1/2 -translate-y-1/2 bg-main hover:bg-blue-600 focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1.5 transition-colors duration-200;
+  }
+  /* Mobile menu */
+  .mobile-menu {
+    @apply md:hidden bg-gray-200 border-t border-gray-200;
+  }
+  /* Badge for cart items */
+  .cart-badge {
+    @apply absolute -top-2 -right-2 bg-[#22242A] text-white text-xs w-5 h-5 rounded-full flex items-center justify-center;
+  }
+}

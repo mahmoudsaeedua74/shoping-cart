@@ -1,0 +1,27 @@
+/* /* @import "tailwindcss/preflight"; */
+@tailwind utilities;
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
+@layer utilities {
+  .btn {
+    @apply bg-white text-main  font-semibold hover:text-white border border-main hover:bg-main  focus:ring-4 focus:outline-none
+    focus:ring-main rounded-3xl text-sm px-8 py-2.5 text-center 
+  dark:border-main dark:text-main dark:hover:text-white dark:hover:bg-main dark:focus:ring-main;
+  }
+  .card {
+    @apply border-4 transition-transform cursor-pointer hover:scale-105 border-[#F6F7F8] rounded-lg shadow-md flex justify-center items-center p-4 gap-6 flex-col;
+
+  }
+
+  .cardLayer {
+    @apply flex justify-center items-center gap-2 cursor-pointer opacity-0 bg-black/10 rounded-md absolute top-0 left-0 right-0 bottom-0 w-full h-full transition-opacity hover:opacity-100;
+  }
+
+  .layerImage {
+    @apply w-9 h-9 group-hover:shadow-2xl rounded-full bg-main text-white flex justify-center items-center transition-transform cursor-pointer hover:scale-110 hover:rotate-3;
+  }
+
+
+
+}
