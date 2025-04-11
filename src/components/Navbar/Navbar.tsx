@@ -2,6 +2,12 @@ import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import NavLinks from "./NavLinks";
+// Import flag images
+import usaFlag from "../../assets/flags/usa.svg";
+import franceFlag from "../../assets/flags/france.svg";
+import spainFlag from "../../assets/flags/spain.svg";
+import germanyFlag from "../../assets/flags/germany.svg";
+import italyFlag from "../../assets/flags/italy.svg";
 
 export default function Navbar() {
   const [navIsOpen, setNavIsOpen] = useState(false);
@@ -108,7 +114,7 @@ export default function Navbar() {
                 onClick={() => setLocalizationOpen(!localizationOpen)}
               >
                 <img
-                  src="/src/assets/flags/usa.svg"
+                  src={usaFlag}
                   alt="USA"
                   className="w-5 h-5"
                 />
@@ -145,7 +151,7 @@ export default function Navbar() {
                       className="flex items-center px-4 py-2 hover:bg-gray-100"
                     >
                       <img
-                        src="/src/assets/flags/france.svg"
+                        src={franceFlag}
                         alt="France"
                         className="w-5 h-5 mr-3"
                       />
@@ -156,7 +162,7 @@ export default function Navbar() {
                       className="flex items-center px-4 py-2 hover:bg-gray-100"
                     >
                       <img
-                        src="/src/assets/flags/spain.svg"
+                        src={spainFlag}
                         alt="Spain"
                         className="w-5 h-5 mr-3"
                       />
@@ -167,7 +173,7 @@ export default function Navbar() {
                       className="flex items-center px-4 py-2 hover:bg-gray-100"
                     >
                       <img
-                        src="/src/assets/flags/germany.svg"
+                        src={germanyFlag}
                         alt="Germany"
                         className="w-5 h-5 mr-3"
                       />
@@ -178,7 +184,7 @@ export default function Navbar() {
                       className="flex items-center px-4 py-2 hover:bg-gray-100"
                     >
                       <img
-                        src="/src/assets/flags/italy.svg"
+                        src={italyFlag}
                         alt="Italy"
                         className="w-5 h-5 mr-3"
                       />

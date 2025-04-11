@@ -3,24 +3,37 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
+// Import brand images
+import brand1 from '../../assets/brands/1678286366797.png';
+import brand2 from '../../assets/brands/1678286391415.png';
+import brand3 from '../../assets/brands/1678286421517.png';
+import brand4 from '../../assets/brands/1678286465856.png';
+import brand5 from '../../assets/brands/1678286502288.png';
+import brand6 from '../../assets/brands/1678286539788.png';
+import brand7 from '../../assets/brands/1678286577463.png';
+import brand8 from '../../assets/brands/1678286620402.png';
+import brand9 from '../../assets/brands/1678286680638.png';
+import brand10 from '../../assets/brands/1678286730980.png';
+import brand11 from '../../assets/brands/1678286767914.png';
+import brand12 from '../../assets/brands/1678286824747.png';
 export default function Brand() {
   const [brands, setBrands] = useState<string[]>([]);
 
   useEffect(() => {
-    // Dynamically import all brand images
+    // Use imported brand images
     const brandImages = [
-      '/src/assets/brands/1678286366797.png',
-      '/src/assets/brands/1678286391415.png',
-      '/src/assets/brands/1678286421517.png',
-      '/src/assets/brands/1678286465856.png',
-      '/src/assets/brands/1678286502288.png',
-      '/src/assets/brands/1678286539788.png',
-      '/src/assets/brands/1678286577463.png',
-      '/src/assets/brands/1678286620402.png',
-      '/src/assets/brands/1678286680638.png',
-      '/src/assets/brands/1678286730980.png',
-      '/src/assets/brands/1678286767914.png',
-      '/src/assets/brands/1678286824747.png',
+      brand1,
+      brand2,
+      brand3,
+      brand4,
+      brand5,
+      brand6,
+      brand7,
+      brand8,
+      brand9,
+      brand10,
+      brand11,
+      brand12,
     ];
     
     setBrands(brandImages);
