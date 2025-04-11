@@ -8,6 +8,7 @@ import franceFlag from "../../assets/flags/france.svg";
 import spainFlag from "../../assets/flags/spain.svg";
 import germanyFlag from "../../assets/flags/germany.svg";
 import italyFlag from "../../assets/flags/italy.svg";
+import ukFlag from "../../assets/flags/uk.svg";
 
 export default function Navbar() {
   const [navIsOpen, setNavIsOpen] = useState(false);
@@ -113,11 +114,7 @@ export default function Navbar() {
                 className="flex items-center space-x-1 px-2 py-1 rounded hover:bg-gray-300 transition-colors duration-200"
                 onClick={() => setLocalizationOpen(!localizationOpen)}
               >
-                <img
-                  src={usaFlag}
-                  alt="USA"
-                  className="w-5 h-5"
-                />
+                <img src={usaFlag} alt="USA" className="w-5 h-5" />
                 <span className="hidden sm:inline">English</span>
                 <i className="fa-solid fa-chevron-down text-xs"></i>
               </button>
@@ -128,11 +125,7 @@ export default function Navbar() {
                       href="#"
                       className="flex items-center px-4 py-2 hover:bg-gray-100"
                     >
-                      <img
-                        src="/src/assets/flags/usa.svg"
-                        alt="USA"
-                        className="w-5 h-5 mr-3"
-                      />
+                      <img src={usaFlag} alt="USA" className="w-5 h-5 mr-3" />
                       <span>English (US)</span>
                     </a>
                     <a
@@ -140,7 +133,7 @@ export default function Navbar() {
                       className="flex items-center px-4 py-2 hover:bg-gray-100"
                     >
                       <img
-                        src="/src/assets/flags/uk.svg"
+                        src={ukFlag}
                         alt="UK"
                         className="w-5 h-5 mr-3"
                       />
