@@ -5,7 +5,7 @@ import visaLogo from "../../assets/images/visaLogo.png";
 import paypal from "../../assets/images/paypal.png";
 import apple from "../../assets/images/get-apple-store.png";
 import google from "../../assets/images/get-google-play.png";
-import style from "./Footer.module.css";
+import "./Footer.css";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 export default function Footer() {
@@ -84,7 +84,7 @@ export default function Footer() {
     { text: "Terms of Use", link: "/terms" },
   ];
   return (
-    <footer className="pt-12">
+    <footer className="pt-12 footer-bg">
       <div className="container">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:justify-items-center justify-items-star">
           {footerSections.map((section) => (
@@ -94,7 +94,7 @@ export default function Footer() {
               </h2>
               <ul className="cursor-pointer">
                 {section.items.map((item) => (
-                  <li key={item.id} className={`${style.listItem} w-fit`}>
+                  <li key={item.id} className="footer-list-item w-fit">
                     <Link to={item.link}>{item.text}</Link>
                   </li>
                 ))}
@@ -130,10 +130,10 @@ export default function Footer() {
           <p className="my-3 text-text cursor-default">
             Subscribe to our newsletter to get updates on our latest offers!
           </p>
-          <div className="flex flex-col md:flex-row gap-4 ">
+          <div className="flex flex-col md:flex-row gap-4">
             <input
               type="text" 
-              className="flex-grow shadow-none  outline-none p-2 rounded-md bg-white" 
+              className="flex-grow shadow-none outline-none p-2 rounded-md bg-white" 
               placeholder="Email.."
             />
             <Button className="">Subscribe</Button>

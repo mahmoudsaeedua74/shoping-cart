@@ -15,13 +15,13 @@ const categories = [
 export default function ProductsFilter() {
   // Update priceMin and priceMax
   return (
-    <div className="flex flex-col gap-y-4 text-sm  md:mb-20">
+    <div className="flex flex-col gap-y-4 text-sm md:mb-20">
     <div className="bg-[#F6F7F8] rounded py-4 px-5 font-semibold">
-      <h3 className="text-[18px] mb-4 text-textColor" id="accessories-label">
+      <h3 className="text-[18px] mb-4 text-text" id="accessories-label">
         category
       </h3>
       <ul
-        className="space-y-4 text-textColor cursor-pointer"
+        className="space-y-4 text-text cursor-pointer"
         role="list"
         aria-labelledby="accessories-label"
       >
@@ -32,14 +32,14 @@ export default function ProductsFilter() {
               className={`flex justify-between`}
             >
               <span>{item.title}</span>
-              <span className="opacity-35"><i className="fa-solid fa-arrow-right"></i></span>
+              <span className="opacity-35"><i className="fa-solid fa-arrow-right" /></span>
             </Link>
           </li>
         ))}
       </ul>
     </div>
     <div className="bg-[#F6F7F8] rounded py-4 px-5 font-semibold">
-      <h3 className="text-[18px] text-textColor uppercase" id="price-label">
+      <h3 className="text-[18px] text-text uppercase" id="price-label">
         Price
       </h3>
       <div aria-labelledby="price-label">
@@ -64,7 +64,7 @@ export default function ProductsFilter() {
       </div>
     </div>
     <div className="bg-[#F6F7F8] rounded py-4 px-5 font-semibold">
-      <h3 className="text-[18px] mb-4 text-textColor uppercase" id="color-label">
+      <h3 className="text-[18px] mb-4 text-text uppercase" id="color-label">
         Color
       </h3>
       <div aria-labelledby="color-label">
@@ -72,11 +72,11 @@ export default function ProductsFilter() {
       </div>
     </div>
     <div className="bg-[#F6F7F8] rounded py-4 px-5 font-semibold">
-      <h3 className="text-[18px] mb-4 text-textColor uppercase" id="brand-label">
+      <h3 className="text-[18px] mb-4 text-text uppercase" id="brand-label">
         Brand
       </h3>
       <ul
-        className="space-y-4 text-textColor"
+        className="space-y-4 text-text"
         role="list"
         aria-labelledby="brand-label"
       >
@@ -98,7 +98,7 @@ export default function ProductsFilter() {
         </li>
       </ul>
     </div>
-    <Button  className="cursor-pointer" aria-label="Show more options">
+    <Button className="cursor-pointer" aria-label="Show more options">
       More
     </Button>
   </div>

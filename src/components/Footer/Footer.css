@@ -1,0 +1,32 @@
+/* Footer.css */
+@import "tailwindcss";
+@tailwind utilities;
+@config "../../../tailwind.config.js";
+
+@layer utilities {
+  .footer-list-item {
+    @apply relative;
+  }
+  
+  .footer-list-item:hover::after {
+    content: "";
+    @apply absolute h-0.5 bg-black left-0 right-0 -bottom-0.5;
+    animation: toleft .3s linear 1;
+    animation-fill-mode: both;
+  }
+}
+
+/* Keep the keyframes animation as is */
+@keyframes toleft {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Footer background color using Tailwind */
+.footer-bg {
+  @apply bg-gray-200;
+}
