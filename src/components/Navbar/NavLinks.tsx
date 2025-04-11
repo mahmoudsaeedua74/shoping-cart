@@ -12,7 +12,7 @@ const NavLinks = ({
   return items.map((item) => (
     <Link
       key={item.id}
-      to={item.to}
+      to={'/'}
       className={isMobile ? "nav-link-mobile" : "nav-link"}
       onClick={onClick}
     >
